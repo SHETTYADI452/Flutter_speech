@@ -15,7 +15,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   String text = 'Press the button and start speaking';
-  bool isListening = false;
   getTextCallBack(text) {
     print("hevjh" + text);
     setState(() {
@@ -65,7 +64,6 @@ class _HomePageState extends State<HomePage> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: SpeechToTextButton(
           text: text,
-          isListening: isListening,
           getTextCallBack: getTextCallBack,
         ),
         // floatingActionButton: AvatarGlow(

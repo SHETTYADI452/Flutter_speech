@@ -20,7 +20,7 @@ class SpeechApi {
     if (isAvailable) {
       _speech.listen(
           onResult: (value) => onResult(value.recognizedWords),
-          localeId: "kn_IN");
+          localeId: "en_IN");
     }
 
     return isAvailable;
